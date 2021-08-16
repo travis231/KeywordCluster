@@ -1,0 +1,5 @@
+streamlit
+#flair
+numpy
+polyfuzz
+#polyfuzz[fast]
