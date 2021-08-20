@@ -31,13 +31,13 @@ st.write("")
 
 st.markdown("## **① Upload crawl 🐸**")
 
-c11 = st.beta_container()
+c11 = st.container()
 
 c29, c30, c31 = st.columns([1, 6, 1])
 
 with c30:
 
-    c10 = st.beta_container()
+    c10 = st.container()
 
 ########################
 
@@ -61,13 +61,13 @@ if len(linesList) > MAX_LINES:
 
 ########################
 
-c = st.beta_container()
-c30 = st.beta_container()
+c = st.container()
+c30 = st.container()
 c29, c30, c31 = st.columns(3)
 
 with c29:
     start_execution = st.button(" Run model! ✨ ")
-    c50 = st.beta_container()
+    c50 = st.container()
 
 c29, c30, c31 = st.columns([1, 6, 1])
 
@@ -141,11 +141,11 @@ else:
 
     FuzzStyled = FuzzStyled.format(format_dictionary)
 
-    c2 = st.beta_container()
+    c2 = st.container()
     c29, c30, c31 = st.columns([1, 6, 1])
 
     with c30:
-        c = st.beta_container()
+        c = st.container()
         st.table(FuzzStyled)
 
     csv = Polyfuzz.to_csv(index=False)
