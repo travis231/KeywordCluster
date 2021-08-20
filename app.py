@@ -4,8 +4,7 @@ import seaborn as sns
 import base64
 import pandas as pd
 import csv
-
-# import matplotlib as plt
+import matplotlib as plt
 
 st.set_page_config(
     page_title="Keyword Mapper for BrightonSEO", page_icon="✨", layout="wide"
@@ -127,8 +126,8 @@ else:
     Polyfuzz.columns = ["URL to map", "URL match", "Similarity"]
     Polyfuzz.index = Polyfuzz.index + 1
 
-    #cmapRed = sns.diverging_palette(10, 133, as_cmap=True)
-    #cmapRedBlue = sns.color_palette("vlag", as_cmap=True)
+    cmapRed = sns.diverging_palette(10, 133, as_cmap=True)
+    cmapRedBlue = sns.color_palette("vlag", as_cmap=True)
     cmGreen = sns.light_palette("green", as_cmap=True)
     FuzzStyled = Polyfuzz.style.background_gradient(cmap=cmGreen)
 
