@@ -69,7 +69,7 @@ c29, c30, c31 = st.columns([1, 6, 1])
 
 with c30:
 
-    uploaded_file = c10.file_uploader("", key=1)
+    uploaded_file = c10.file_uploader("", key="1")
 
     if uploaded_file is not None:
         file_container = c10.beta_expander("Check your uploaded CSV")
