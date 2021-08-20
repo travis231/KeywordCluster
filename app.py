@@ -23,9 +23,6 @@ with c32:
     st.text("")
     st.text("")
     st.text("")
-    st.markdown(
-        "###### Made in [![this is an image link](https://i.imgur.com/iIOA6kU.png)](https://www.streamlit.io/)&nbsp, with :heart: by [@DataChaz](https://twitter.com/DataChaz) &nbsp [![this is an image link](https://i.imgur.com/thJhzOO.png)](https://www.buymeacoffee.com/cwar05)"
-    )
 
 st.write("")
 
