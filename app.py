@@ -72,7 +72,7 @@ with c30:
     uploaded_file = c10.file_uploader("", key="2")
 
     if uploaded_file is not None:
-        file_container = c10.beta_expander("Check your uploaded CSV")
+        file_container = c10.expander("Check your uploaded CSV")
         GSCDf = pd.read_csv(uploaded_file)
         uploaded_file.seek(0)
         file_container.write(GSCDf)
@@ -148,7 +148,7 @@ else:
     b64 = base64.b64encode(csv.encode()).decode()
 
     c2.markdown("## **③ Check mapping 📌**")
-    with c2.beta_expander("ℹ️ - Tips for better mapping", expanded=False):
+    with c2.expander("ℹ️ - Tips for better mapping", expanded=False):
 
         st.write(
             """   
