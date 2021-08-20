@@ -11,7 +11,7 @@ st.set_page_config(
     page_title="Keyword Mapper for BrightonSEO", page_icon="✨", layout="wide"
 )
 
-c30, c31, c32 = st.beta_columns(3)
+c30, c31, c32 = st.columns(3)
 
 with c30:
     st.image("logo.png", width=500)
@@ -33,7 +33,7 @@ st.markdown("## **① Upload crawl 🐸**")
 
 c11 = st.beta_container()
 
-c29, c30, c31 = st.beta_columns([1, 6, 1])
+c29, c30, c31 = st.columns([1, 6, 1])
 
 with c30:
 
@@ -63,13 +63,13 @@ if len(linesList) > MAX_LINES:
 
 c = st.beta_container()
 c30 = st.beta_container()
-c29, c30, c31 = st.beta_columns(3)
+c29, c30, c31 = st.columns(3)
 
 with c29:
     start_execution = st.button(" Run model! ✨ ")
     c50 = st.beta_container()
 
-c29, c30, c31 = st.beta_columns([1, 6, 1])
+c29, c30, c31 = st.columns([1, 6, 1])
 
 with c30:
 
@@ -142,7 +142,7 @@ else:
     FuzzStyled = FuzzStyled.format(format_dictionary)
 
     c2 = st.beta_container()
-    c29, c30, c31 = st.beta_columns([1, 6, 1])
+    c29, c30, c31 = st.columns([1, 6, 1])
 
     with c30:
         c = st.beta_container()
